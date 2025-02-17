@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script defer src="assets/js/scripts.js"></script>
+</head>
+<body>
+<header>
+    <a href="#" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800"><defs><filter id="nnneon-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feGaussianBlur stdDeviation="18 17" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter><filter id="nnneon-filter2" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feGaussianBlur stdDeviation="10 17" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g stroke-width="16" stroke="#e0ffb3" fill="none"><rect width="300" height="300" x="250" y="250" filter="url(#nnneon-filter)" rx="46" ry="46"></rect><rect width="300" height="300" x="262" y="250" filter="url(#nnneon-filter2)" opacity="0.25" rx="46" ry="46"></rect><rect width="700" height="700" x="38" y="50" filter="url(#nnneon-filter2)" opacity="0.25" rx="46" ry="46"></rect><rect width="700" height="700" x="50" y="50" rx="46" ry="46"></rect></g></svg>
+        StudentHub
+    </a>
+    <!-- <div id="features">
+        <span style="animation-delay: 0s;">Платформа для студентов</span>
+        <span style="animation-delay: 3.3s;">Ресурсы и поддержка</span>
+        <span style="animation-delay: 6.6s;">Учись и развивайся</span>
+    </div> -->
+    <div class="right-section">
+        <nav>
+            <a href="#">Имя пользователя</a>
+        </nav>
+    </div>
+    </header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const featuresText = document.getElementById('features').children;
+        let activeIndex = 0;
+
+        setInterval(() => {
+        featuresText[activeIndex].style.opacity = '0';
+        activeIndex = (activeIndex + 1) % featuresText.length;
+        featuresText[activeIndex].style.opacity = '1';
+        }, 3300);
+    });
+</script>
+</body>
+</html>

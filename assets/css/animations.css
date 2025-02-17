@@ -1,0 +1,12 @@
+section {
+    transition: transform 0.3s ease; /* Плавность перехода на 0.3 секунды */
+}
+
+section:hover,
+section:focus-within {
+    transform: scale(1.1);
+}
+
+section:focus-within p {
+    display: block;
+}

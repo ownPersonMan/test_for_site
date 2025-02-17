@@ -1,0 +1,63 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2f2f;
+    color: #feebdf;
+    font-family: Arial, sans-serif;
+}
+
+.register-container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.register-form {
+    background-color: #fef5ef;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем элементы по горизонтали */
+}
+
+.register-form h2 {
+    color: #bb8b6c;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    color: #bb8b6c;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.register-form input {
+    display: block;
+    width: 100%; /* Ширина 100% от родительского контейнера */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #bb8b6c;
+    border-radius: 3px;
+    box-sizing: border-box; /* Учитываем отступы и рамки в общей ширине элемента */
+}
+
+.register-form button {
+    background-color: #faa973;
+    color: #fef5ef;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%; /* Ширина 100% от родительского контейнера */
+    box-sizing: border-box; /* Учитываем отступы в общей ширине элемента */
+}
+
+.register-form button:hover {
+    background-color: #c67e50;
+}
